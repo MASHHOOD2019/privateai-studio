@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PrivateAI Studio</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <div class="brand">
+      <div class="brand-name">PrivateAI Studio</div>
+      <div class="brand-sub">100% offline. Nothing leaves your PC.</div>
+      <div id="ollama-status" class="status">checking AI…</div>
+    </div>
+    <nav>
+      <button class="mode active" data-mode="docs">📄 Documents</button>
+      <button class="mode" data-mode="code">💻 Codebase</button>
+      <button class="mode" data-mode="resume">🎯 Resume Coach</button>
+      <button class="mode" data-mode="meetings">🎙️ Meetings</button>
+      <button class="mode" data-mode="notes">🔒 Private Notes</button>
+    </nav>
+    <div class="foot">Runs on Ollama · your machine only</div>
+  </aside>
+  <main id="main"></main>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
